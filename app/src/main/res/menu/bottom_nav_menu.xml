@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/my_post"
+        android:title="My Post"
+        android:icon="@drawable/icons8_post_64__1_"
+        />
+    <item
+        android:id="@+id/community"
+        android:title="Community"
+        android:icon="@drawable/icons8_community_64"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/icons8_profile_24"
+        />
+</menu>

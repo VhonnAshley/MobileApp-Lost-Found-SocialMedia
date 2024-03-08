@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        app:cardBackgroundColor="#F1EBE4"
+        app:cardElevation="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/usernamerowView"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="35dp"
+                android:text="Username"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imagemView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="31dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toBottomOf="@+id/statusrowView"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/daterowView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Date"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imagemView2"
+                app:layout_constraintTop_toBottomOf="@+id/usernamerowView" />
+
+            <TextView
+                android:id="@+id/caprowView"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="caption goes here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.589"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagemView2"/>
+
+            <ImageView
+                android:id="@+id/picrowView"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.589"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/caprowView" />
+
+            <TextView
+                android:id="@+id/catpostrowView"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:paddingTop="8dp"
+                android:text="iLost"
+                android:textAlignment="center"
+                android:textColor="#6B1D1D"
+                android:textStyle="bold"
+                app:flow_horizontalAlign="center"
+                app:flow_verticalAlign="center"
+                app:layout_constraintStart_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toBottomOf="@+id/picrowView"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/statusrowView"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="stat goes here"
+                app:layout_constraintStart_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toBottomOf="@+id/categoryBtn" />
+
+            <Button
+                android:id="@+id/commentrowView"
+                android:layout_width="240dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Write a Comment"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:backgroundTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/statusrowView"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/trashIB"
+                android:layout_width="24dip"
+                android:layout_height="32dip"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/delete_icon"
+                app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                app:layout_constraintHorizontal_bias="0.936"
+                app:layout_constraintStart_toEndOf="@+id/categoryBtn"
+                app:layout_constraintTop_toBottomOf="@+id/picrowView"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imagemView2"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile" />
+
+            <Button
+                android:text="category*"
+                android:id="@+id/categoryBtn"
+                android:layout_width="143dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#6B1D1D"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:backgroundTint="#6B1D1D"
+                app:layout_constraintStart_toEndOf="@+id/catpostrowView"
+                app:layout_constraintTop_toBottomOf="@+id/picrowView"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+            <Button
+                android:text="Cancel"
+                android:id="@+id/cancelBtn"
+                android:layout_width="143dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#6B1D1D"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:backgroundTint="#6B1D1D"
+                app:layout_constraintStart_toEndOf="@+id/catpostrowView"
+                app:layout_constraintTop_toBottomOf="@+id/picrowView"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="81dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="33dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="362dp" />
+
+            <ImageView
+                android:id="@+id/starPic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="31dp"
+                app:layout_constraintEnd_toStartOf="@+id/starCountUpdating"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/starCountUpdating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="0"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

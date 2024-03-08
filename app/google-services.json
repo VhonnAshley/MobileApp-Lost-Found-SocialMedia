@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867890033595",
+    "project_id": "ilostifind-631c2",
+    "storage_bucket": "ilostifind-631c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867890033595:android:b3d3cf44acdad47e520a9e",
+        "android_client_info": {
+          "package_name": "com.example.ilostifind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867890033595-e15ppo86up3b1e3s6iegs9in06t6osmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeN0ehYHzFuXZgm7R-8d5fQ33FzZhU_FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867890033595-e15ppo86up3b1e3s6iegs9in06t6osmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
